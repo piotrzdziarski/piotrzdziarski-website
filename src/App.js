@@ -1,27 +1,18 @@
-import React, {Component} from 'react';
-import styled from 'styled-components';
-import './App.css';
-import './css/bulma.min.css';
-
-const StyledWrapper = styled.div`
-   display: flex;
-   justify-content: center;
-   
-   
-   :hover {
-    background: black;
-   }
-`;
-
+import React, { Component } from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './components/GlobalStyle';
+import Router from './Router';
+import { theme } from "./utils/theme";
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <StyledWrapper>
-                    <h1>Piotr Zdziarski</h1>
-                </StyledWrapper>
-            </div>
+            <>
+                <GlobalStyles/>
+                <ThemeProvider theme={theme}>
+                    <Router/>
+                </ThemeProvider>
+            </>
         );
     }
 }
