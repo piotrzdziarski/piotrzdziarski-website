@@ -1,8 +1,5 @@
 {
   "name": "piotrzdziarski",
-  "jest": {
-    "setupFiles": ["jest-canvas-mock"]
-  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
