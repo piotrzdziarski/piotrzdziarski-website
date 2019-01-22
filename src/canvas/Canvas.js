@@ -23,7 +23,6 @@ class Canvas extends Component {
     }
 
     componentDidMount() {
-        console.log(this.canvas.current);
         const canvasLogic = new CanvasLogic(this.canvas.current);
         canvasLogic.createAnimation();
     }
