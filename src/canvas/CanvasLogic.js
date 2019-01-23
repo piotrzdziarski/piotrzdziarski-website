@@ -1,22 +1,21 @@
 import * as THREE from "three";
 import { CanvasAnimate } from "./CanvasAnimate";
 import { CanvasResize } from "./CanvasResize";
-import { CanvasDots } from "./CanvasDots";
-
+import { CanvasLasers } from "./CanvasLasers/CanvasLasers";
 
 export class CanvasLogic {
 
     constructor(canvas) {
         this.scene = new THREE.Scene();
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-        this.renderer.setClearColor(0x27343e, 1)
+        this.renderer.setClearColor(0x252627, 1)
     }
 
 
     createAnimation() {
         this.setUpCamera();
         this.setUpCanvasStaticProperties();
-        this.drawDots();
+        this.drawLasers();
 
         this.scaleRendererOnResize();
         this.animate();
@@ -24,10 +23,6 @@ export class CanvasLogic {
 
 
     setUpCamera() {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        const aspect = width / height;
-
         this.camera =
             new THREE.OrthographicCamera(
                 -1,
@@ -47,18 +42,19 @@ export class CanvasLogic {
         CanvasLogic.camera = this.camera;
         CanvasLogic.dots = [];
         CanvasLogic.randoms = [];
+        CanvasLogic.canvasDots = [];
+        CanvasLogic.canvasLines = [];
+    }
+
+    drawLasers() {
+        const drawLasers = new CanvasLasers();
+        drawLasers.drawLasers();
     }
 
     scaleRendererOnResize() {
         const canvasResize = new CanvasResize();
         canvasResize.scaleRendererOnResize();
     }
-
-    drawDots() {
-        const canvasDots = new CanvasDots();
-        canvasDots.drawDots();
-    }
-
 
     animate() {
         const canvasAnimate = new CanvasAnimate();

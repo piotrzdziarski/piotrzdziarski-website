@@ -1,9 +1,7 @@
-import { AbstractCanvas } from "./AbstractCanvas";
+import { CanvasProperties } from "./CanvasProperties";
+import * as THREE from "three";
 
-export class CanvasResize extends AbstractCanvas {
-
-    #tanFOV;
-    #windowHeight;
+export class CanvasResize extends CanvasProperties {
 
     addWindowResizeListener(func) {
         window.addEventListener('resize', func);
@@ -11,32 +9,20 @@ export class CanvasResize extends AbstractCanvas {
 
 
     scaleRendererOnResize() {
+        this.coefficient = window.innerWidth / window.innerHeight;
         this.addWindowResizeListener(this.scaleRenderer.bind(this));
         this.scaleRenderer();
+
     }
 
     scaleRenderer() {
         this.renderer.setSize(window.innerWidth, window.innerHeight);
-    }
 
-
-    rectangleConstantDimensions() {
-        this.#tanFOV = Math.tan( ( ( Math.PI / 180 ) * this.camera.fov / 2 ) );
-        this.#windowHeight = window.innerHeight;
-        this.addWindowResizeListener(this.constantRectangle.bind(this));
-        this.constantRectangle();
-    }
-
-
-    constantRectangle() {
-        this.camera.aspect = window.innerWidth / window.innerHeight;
-
-        // adjust the FOV
-        this.camera.fov = ( 360 / Math.PI ) * Math.atan( this.#tanFOV * ( window.innerHeight / this.#windowHeight ) );
-
-        this.camera.updateProjectionMatrix();
-
-        this.renderer.setSize( window.innerWidth, window.innerHeight );
-        this.renderer.render( this.scene, this.camera );
+        this.canvasLines.forEach((line) => {
+            line.geometry.vertices = [
+                new THREE.Vector3(0, 200, -100 * ( 1 / this.coefficient)),
+                new THREE.Vector3(0, 0, 0),
+            ]
+        });
     }
 }
