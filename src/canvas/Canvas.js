@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { CanvasLogic } from "./CanvasLogic";
 
 const CanvasThreeJs = styled.canvas`
-  background: #27343e;
   margin: 0;
   padding: 0;
   display: block;
