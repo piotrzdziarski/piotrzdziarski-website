@@ -8,7 +8,7 @@ export class CanvasLogic {
     constructor(canvas) {
         this.scene = new THREE.Scene();
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-        this.renderer.setClearColor(0x252627, 1)
+        this.renderer.setClearColor(0x222b30, 1)
     }
 
 
@@ -32,6 +32,9 @@ export class CanvasLogic {
                 -500,
                 1000
             );
+
+        this.camera.zoom = 0.08;
+        this.camera.updateProjectionMatrix();
 
         this.scene.add(this.camera);
     }
