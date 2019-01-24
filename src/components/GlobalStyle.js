@@ -18,6 +18,7 @@ margin: 0;
   }
   
   *, *::before, *::after {
+  -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
   }
 `;

@@ -6,6 +6,7 @@ const CanvasThreeJs = styled.canvas`
   margin: 0;
   padding: 0;
   display: block;
+  background: #222b30;
 `;
 
 
