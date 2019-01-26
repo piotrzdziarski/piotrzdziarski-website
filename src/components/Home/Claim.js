@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import PoppingInLetters from "../utils/PoppingInLetters";
+import PoppingInText from "../utils/PoppingInText";
 
 const Header = styled.h1`
   font-size: 42px;
@@ -8,13 +8,17 @@ const Header = styled.h1`
   text-align: center;
 `;
 
+const Primary = styled.span`
+  color: ${ ({ theme }) => theme.colors.primary };
+`;
+
 class Claim extends Component {
     render() {
         return (
             <Header>
-                <PoppingInLetters>
-                    Hello I'm a Piotr Zdziarski
-                </PoppingInLetters>
+                <PoppingInText>
+                    Hello I'm a <Primary>Piotr Zdziarski <Primary>xd</Primary></Primary>
+                </PoppingInText>
             </Header>
         );
     }
