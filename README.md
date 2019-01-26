@@ -5,4 +5,4 @@ I describe who I am, I give some info about my skills in web development, and ad
 
 Additional technologies: 
 - Styled components
-- Canvas
+- Three.js

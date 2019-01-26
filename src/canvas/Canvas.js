@@ -7,6 +7,8 @@ const CanvasThreeJs = styled.canvas`
   padding: 0;
   display: block;
   background: #222b30;
+  position: relative;
+  z-index: -10;
 `;
 
 
