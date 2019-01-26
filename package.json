@@ -79,8 +79,8 @@
   "devDependencies": {
     "canvas": "^2.3.1",
     "canvas-prebuilt": "^2.0.0-alpha.14",
-    "jest-canvas-mock": "^1.1.1-beta.1",
-    "react-test-renderer": "^16.7.0"
+    "enzyme-adapter-react-16": "^1.8.0",
+    "jest-canvas-mock": "^1.1.1-beta.1"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -89,8 +89,7 @@
     ],
     "resolver": "jest-pnp-resolver",
     "setupFiles": [
-      "react-app-polyfill/jsdom",
-      "jest-canvas-mock"
+      "react-app-polyfill/jsdom"
     ],
     "testMatch": [
       "<rootDir>/tests/**/__tests__/**/*.{js,jsx,ts,tsx}",

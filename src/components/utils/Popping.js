@@ -22,35 +22,48 @@ export const Pop = styled.span`
   opacity: 0;
   display: inline-block;
   animation: ${ PopIn } .4s forwards;
-  animation-delay: ${ (props) => props.index * .04 + 's'};
+  animation-delay: ${ (props) => props.index * .04 + 's' };
 `;
 
 
 export class Popping {
 
     #poppingJSX = [];
+    #xd = ["1454", ["2312312"]];
 
-    constructor(string) {
-        this.toPopString = string;
-    }
-
-    getPoppingJSX() {
-        this.iterateThroughLetter();
+    getPoppingJSX(jsx) {
+        this.recursiveReplacingToPoppingJSX(jsx, 0);
         return this.#poppingJSX;
     }
 
-    iterateThroughLetter() {
-        for (let i = 0; i < this.toPopString.length; i++) {
-            const letterJSX = this.createJSXForLetter(this.toPopString.charAt(i), i);
-            this.attachToPoppingJSX(letterJSX);
+
+    recursiveReplacingToPoppingJSX(jsx, deepLevel) {
+        if (typeof jsx === "string") {
+            jsx = this.getPoppingArrayFromText(jsx);
+            return;
         }
+
+        jsx.forEach((child) => {
+            if (typeof child === "string") {
+                child = this.getPoppingArrayFromText(child);
+                return;
+            }
+            this.recursiveReplacingToPoppingJSX(child.props.children);
+        });
     }
 
-    createJSXForLetter(letter, key) {
+
+    getPoppingArrayFromText(text) {
+        const poppingArray = [];
+        for (let i = 0; i < text.length; i++) {
+            poppingArray.push(this.getPoppingCharacter(text.charAt(i), i))
+        }
+        return poppingArray;
+    }
+
+
+    getPoppingCharacter(letter, key) {
+        if (letter === ' ') letter = `\u00A0`;
         return (<Pop index={ key } key={ key }>{ letter }</Pop>);
-    }
-
-    attachToPoppingJSX(letterJSX) {
-        this.#poppingJSX.push(letterJSX);
     }
 }
