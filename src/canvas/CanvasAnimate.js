@@ -11,7 +11,7 @@ export class CanvasAnimate extends CanvasProperties {
 
     rotateLasers() {
         for (let i = 0; i < this.lasersNumber; i++) {
-            const time = Date.now() * 0.0001 * this.randoms[i];
+            const time = Date.now() * 0.00008 * this.randoms[i];
 
             this.canvasDots[i].position.x = 0;
             this.canvasDots[i].position.y = Math.sin(time) * i * 0.5;

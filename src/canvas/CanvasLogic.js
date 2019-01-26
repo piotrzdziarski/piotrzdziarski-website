@@ -8,7 +8,7 @@ export class CanvasLogic {
     constructor(canvas) {
         this.scene = new THREE.Scene();
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-        this.renderer.setClearColor(0x222b30, 1)
+        this.renderer.setClearColor(0x252934 , 1)
     }
 
 
