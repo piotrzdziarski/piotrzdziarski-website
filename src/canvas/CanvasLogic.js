@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { CanvasAnimate } from "./CanvasAnimate";
 import { CanvasResize } from "./CanvasResize";
 import { CanvasLasers } from "./CanvasLasers/CanvasLasers";
+import { CanvasAnimateSpeedController } from "./CanvasAnimateSpeedController";
 
 export class CanvasLogic {
 
@@ -13,6 +14,8 @@ export class CanvasLogic {
 
 
     createAnimation() {
+        const xd = new CanvasAnimateSpeedController();
+        xd.speedUpAnimation();
         this.setUpCamera();
         this.setUpCanvasStaticProperties();
         this.drawLasers();

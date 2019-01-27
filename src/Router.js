@@ -8,6 +8,7 @@ import InsideRouterLayout from "./layouts/InsideRouterLayout";
 import RouteLayout from "./layouts/RouteLayout";
 
 class Router extends Component {
+
     render() {
         return (
             <BrowserRouter>
