@@ -4,6 +4,10 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./utils/theme";
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <ThemeProvider theme={ theme }>
