@@ -2,10 +2,10 @@ import React from 'react';
 import { Popping } from "./Popping";
 
 
-const PoppingInText = ({ children }) => {
-
+const PoppingInText = (props) => {
     const popping = new Popping();
-    return popping.getPoppingJSX(children);
+    popping.setDelayIfGiven(props.delay);
+    return popping.getPoppingJSXFromText(props.children);
 };
 
 

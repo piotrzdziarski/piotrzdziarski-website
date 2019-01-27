@@ -7,6 +7,10 @@ const RouteWrapper = styled.div`
   height: 100%;
   top: 0;
   left: 0;
+  ${ ({ theme }) => theme.media.tablet } {
+    margin-left: ${ ({ theme }) => theme.nav.desktopWidth };
+    width: calc(100vw  - ${ ({ theme }) => theme.nav.desktopWidth });
+  }
 `;
 
 const RouteLayout = ({ children }) => (

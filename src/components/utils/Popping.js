@@ -21,42 +21,24 @@ const PopIn = keyframes`
 export const Pop = styled.span`
   opacity: 0;
   display: inline-block;
-  animation: ${ PopIn } .4s forwards;
+  animation: ${ PopIn } .3s forwards;
   animation-delay: ${ (props) => props.index * .04 + 's' };
 `;
 
 
 export class Popping {
 
-    #poppingJSX = [];
-    #xd = ["1454", ["2312312"]];
+    #startNumber = 0;
 
-    getPoppingJSX(jsx) {
-        this.recursiveReplacingToPoppingJSX(jsx, 0);
-        return this.#poppingJSX;
+    setDelayIfGiven(delay) {
+        if (typeof delay !== "undefined")
+            this.#startNumber = delay;
     }
 
-
-    recursiveReplacingToPoppingJSX(jsx, deepLevel) {
-        if (typeof jsx === "string") {
-            jsx = this.getPoppingArrayFromText(jsx);
-            return;
-        }
-
-        jsx.forEach((child) => {
-            if (typeof child === "string") {
-                child = this.getPoppingArrayFromText(child);
-                return;
-            }
-            this.recursiveReplacingToPoppingJSX(child.props.children);
-        });
-    }
-
-
-    getPoppingArrayFromText(text) {
+    getPoppingJSXFromText(text) {
         const poppingArray = [];
-        for (let i = 0; i < text.length; i++) {
-            poppingArray.push(this.getPoppingCharacter(text.charAt(i), i))
+        for (let i = this.#startNumber; i < this.#startNumber + text.length; i++) {
+            poppingArray.push(this.getPoppingCharacter(text.charAt(i - this.#startNumber), i))
         }
         return poppingArray;
     }
