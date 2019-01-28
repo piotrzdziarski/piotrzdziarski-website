@@ -9,19 +9,17 @@ export class CanvasLogic {
     constructor(canvas) {
         this.scene = new THREE.Scene();
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-        this.renderer.setClearColor(0x252934 , 1)
+        this.renderer.setClearColor(0x252934, 1)
     }
 
 
     createAnimation() {
-        const xd = new CanvasAnimateSpeedController();
-        xd.speedUpAnimation();
         this.setUpCamera();
         this.setUpCanvasStaticProperties();
         this.drawLasers();
-
         this.scaleRendererOnResize();
         this.animate();
+        this.onLoadAnimation();
     }
 
 
@@ -60,6 +58,12 @@ export class CanvasLogic {
     scaleRendererOnResize() {
         const canvasResize = new CanvasResize();
         canvasResize.scaleRendererOnResize();
+    }
+
+    onLoadAnimation() {
+        const speedController = new CanvasAnimateSpeedController();
+        speedController.counter = 325;
+        speedController.speedUpAnimation();
     }
 
     animate() {

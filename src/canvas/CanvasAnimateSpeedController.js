@@ -4,7 +4,7 @@ export class CanvasAnimateSpeedController {
 
     constructor() {
         this.speed = 1;
-        this.counter = 325;
+        this.counter = 0;
         this.isGrowing = true;
     }
 
@@ -27,11 +27,9 @@ export class CanvasAnimateSpeedController {
             return;
         }
 
-
         (this.isGrowing) ?
-            this.counter += 3:
+            this.counter += 10:
             this.counter -= 1.5;
-
 
         this.speed += 0.0000000000002 * this.counter;
         CanvasAnimate.setSpeed(this.speed);
