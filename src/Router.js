@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import InsideRouterLayout from "./layouts/InsideRouterLayout";
 import RouteLayout from "./layouts/RouteLayout";
+import CanvasAnimationComponent from "./canvas/components/CanvasAnimationComponent";
 
 class Router extends Component {
 
@@ -14,6 +15,7 @@ class Router extends Component {
             <BrowserRouter>
                 <>
                     <InsideRouterLayout/>
+                    <CanvasAnimationComponent/>
                     <RouteLayout>
                         <Route exact path="/" component={ Home }/>
                         <Route path="/about" component={ About }/>

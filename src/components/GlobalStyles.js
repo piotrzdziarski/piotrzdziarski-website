@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
+     ${ ({theme}) => theme.media.tablet} {
+      overflow: hidden;
+     }
   }
   
   *, *::before, *::after {
