@@ -2,7 +2,6 @@ import * as THREE from "three";
 import { CanvasAnimate } from "./CanvasAnimate";
 import { CanvasResize } from "./CanvasResize";
 import { CanvasLasers } from "./CanvasLasers/CanvasLasers";
-import { CanvasAnimateSpeedController } from "./CanvasAnimateSpeedController";
 
 export class CanvasLogic {
 
@@ -19,7 +18,6 @@ export class CanvasLogic {
         this.drawLasers();
         this.scaleRendererOnResize();
         this.animate();
-        this.onLoadAnimation();
     }
 
 
@@ -58,12 +56,6 @@ export class CanvasLogic {
     scaleRendererOnResize() {
         const canvasResize = new CanvasResize();
         canvasResize.scaleRendererOnResize();
-    }
-
-    onLoadAnimation() {
-        const speedController = new CanvasAnimateSpeedController();
-        speedController.counter = 325;
-        speedController.speedUpAnimation();
     }
 
     animate() {

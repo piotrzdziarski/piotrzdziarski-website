@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { CanvasLogic } from "./CanvasLogic";
+import { CanvasLogic } from "../CanvasLogic";
 
 const CanvasThreeJs = styled.canvas`
   margin: 0;

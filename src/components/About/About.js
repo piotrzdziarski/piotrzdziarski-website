@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import styled, {keyframes} from 'styled-components';
+import styled from 'styled-components';
 import Line from "../utils/Line";
 import MediaQuery from 'react-responsive';
 import PoppingInText from "../utils/PoppingInText";
-import programming from "../../images/programming.jpeg";
+import ThreeDimensionalTriangle from "./ThreeDimensionalTriangle";
 
 
 const AboutWrapper = styled.main`
   height: 100%;
+  max-width: 1400px;
+  margin: auto;
    ${ ({ theme }) => theme.media.tablet } {
       ${ ({ theme }) => theme.displayFlexCentered };
    } 
@@ -25,6 +27,13 @@ const Section = styled.section`
   color: white;
 `;
 
+
+const SectionFirst = styled(Section)`
+  ${ ({ theme }) => theme.media.mobile } {
+    padding: 50px 40px 50px 60px;     
+  }
+`;
+
 const Article = styled.article`
   margin-top: 25px;
 `;
@@ -39,42 +48,11 @@ const Header = styled.h1`
 `;
 
 
-const FadeIn = keyframes`
-  0%{
-  opacity: 0;
-  transform: scale(.95);
-  }
-  
-  50% {
-  transform: scale(1.05) rotate(5deg);
-  }
-  
-  100%{
-  transform: scale(1) rotate(0);
-  opacity: 1;
-  }
-`;
-
-
-const Img = styled.img`
-  width: 100%;
-  height: 50%;
-  display: block;
-  border-radius: 2px;
-  animation: ${FadeIn} .6s forwards;
-  border: 1px solid ${ ({ theme }) => theme.colors.primary };
-  background: linear-gradient(rgba(23,31,39,.5), rgba(23,31,39,.5)), url(${ programming });
-  background-size: cover;
-`;
-
-
-
-
 class About extends Component {
     render() {
         return (
             <AboutWrapper>
-                <Section>
+                <SectionFirst>
                     <div>
                         <Header>
                             <PoppingInText>
@@ -100,10 +78,10 @@ class About extends Component {
                             </p>
                         </Article>
                     </div>
-                </Section>
+                </SectionFirst>
                 <MediaQuery query="(min-width:768px)">
                     <Section>
-                        <Img alt=""/>
+                        <ThreeDimensionalTriangle/>
                     </Section>
                 </MediaQuery>
             </AboutWrapper>
