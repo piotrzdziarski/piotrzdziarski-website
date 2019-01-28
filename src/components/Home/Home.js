@@ -6,6 +6,7 @@ const LineBase = css`
   position: absolute;
   border-radius: 4px;
   border: 1px solid ${ ({ theme }) => theme.colors.primary };
+  animation: ${ widthIn } 1.25s forwards;
 `;
 
 const widthIn = keyframes`
@@ -18,7 +19,7 @@ const widthIn = keyframes`
   }
 `;
 
-const Line = styled.div`
+export const Line = styled.div`
   ${ LineBase };
   
   top: 35%;  

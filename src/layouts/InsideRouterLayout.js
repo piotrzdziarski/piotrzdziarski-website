@@ -9,6 +9,7 @@ class InsideRouterLayout extends Component {
     constructor(props) {
         super(props);
         this.canvasAnimateSpeedController = new CanvasAnimateSpeedController();
+        this.canvasAnimateSpeedController.speed = 1.0000000070752004;
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
