@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { CanvasAnimateSpeedController } from "../CanvasAnimateSpeedController";
 import {withRouter} from 'react-router-dom';
 
@@ -13,6 +13,8 @@ class CanvasAnimationComponent extends Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         if(this.props.location.pathname !== prevProps.location.pathname) {
             this.canvasAnimateSpeedController.stopSpeedingUp();
+            this.canvasAnimateSpeedController.counter = 0;
+            this.canvasAnimateSpeedController.isGrowing = true;
             this.canvasAnimateSpeedController.runAnimation();
         }
     }

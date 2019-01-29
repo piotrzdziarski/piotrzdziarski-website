@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
 
-const PopIn = keyframes`
+export const PopIn = keyframes`
   0% {
     transform: scale(.6);
     opacity: 0;

@@ -4,61 +4,30 @@ import Line from "../utils/Line";
 import MediaQuery from 'react-responsive';
 import PoppingInText from "../utils/PoppingInText";
 import ThreeDimensionalTriangle from "./ThreeDimensionalTriangle";
+import {FlexWrapper, Section, SectionFirst} from "../utils/TwoColumnFlex";
+import {StandardHeader} from "../utils/StandardHeader";
 
-
-const AboutWrapper = styled.main`
-  height: 100%;
-  max-width: 1400px;
-  margin: auto;
-   ${ ({ theme }) => theme.media.tablet } {
-      ${ ({ theme }) => theme.displayFlexCentered };
-   } 
-`;
-
-const Section = styled.section`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 25px;
-  ${ ({ theme }) => theme.media.mobile } {
-    padding: 50px;
-  }
-  color: white;
-`;
-
-
-const SectionFirst = styled(Section)`
-  ${ ({ theme }) => theme.media.mobile } {
-    padding: 50px 40px 50px 60px;     
-  }
-`;
 
 const Article = styled.article`
   margin-top: 25px;
-`;
-
-
-const Header = styled.h1`
-  font-size: 36px;
-  ${ ({ theme }) => theme.media.mobile } {
-    font-size: 42px;
+  font-size: 14px;
+  ${({theme}) => theme.media.mobile} {
+    font-size: 16px;
   }
-  margin-bottom: 20px;
 `;
 
 
 class About extends Component {
     render() {
         return (
-            <AboutWrapper>
+            <FlexWrapper>
                 <SectionFirst>
                     <div>
-                        <Header>
+                        <StandardHeader>
                             <PoppingInText>
                                 About Me
                             </PoppingInText>
-                        </Header>
+                        </StandardHeader>
                         <Line width="100%"/>
                         <Article>
                             <p>My programming journey started about 2 years ago after I watched my first C++
@@ -84,7 +53,7 @@ class About extends Component {
                         <ThreeDimensionalTriangle/>
                     </Section>
                 </MediaQuery>
-            </AboutWrapper>
+            </FlexWrapper>
         );
     }
 }
