@@ -9,8 +9,8 @@ test('Test on page load animation', () => {
     canvasAnimateSpeedController.runAnimationOnPageLoad();
     expect(canvasAnimateSpeedController.counter).toEqual(canvasAnimateSpeedController.counterMaxValue);
     expect(setInterval).toHaveBeenCalledTimes(1);
-
     jest.runAllTimers();
+    expect(clearInterval).toHaveBeenCalledTimes(1);
     expect(canvasAnimateSpeedController.counter).toEqual(0);
 });
 
@@ -21,15 +21,14 @@ test('Test normal animation', () => {
 
     expect(canvasAnimateSpeedController.speed).toEqual(1);
     canvasAnimateSpeedController.runAnimation();
-    canvasAnimateSpeedController.decreaseSpeedValue = 5;
     jest.runAllTimers();
 
     let testingSpeed = 1;
-    for (let i = 0; i <= canvasAnimateSpeedController.counterMaxValue + 15; i += 15) {
+    for (let i = 0; i < canvasAnimateSpeedController.counterMaxValue; i += 15) {
         testingSpeed += canvasAnimateSpeedController.speedMultiplier * i;
     }
 
-    for (let i = canvasAnimateSpeedController.counterMaxValue - 5; i >= -5; i -= 5) {
+    for (let i = canvasAnimateSpeedController.counterMaxValue; i >= 0; i -= 1.5) {
         testingSpeed += canvasAnimateSpeedController.speedMultiplier * i;
     }
 

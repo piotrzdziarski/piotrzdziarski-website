@@ -28,25 +28,22 @@ export class CanvasAnimateSpeedController {
     }
 
     speedInterval() {
-        if(this.counter > this.counterMaxValue) {
+        (this.isGrowing) ?
+            this.counter += 15:
+            this.counter -= this.decreaseSpeedValue;
+
+
+        if(this.counter === this.counterMaxValue) {
             this.isGrowing = false;
-            this.counter = this.counterMaxValue;
-            return;
         }
 
-        if(this.counter < 0) {
-            this.counter = 0;
+        if(this.counter === 0) {
             this.isGrowing = true;
 
             // first animation is longer (for better UX) so after it finishes we will speed up next ones
             this.decreaseSpeedValue = 5;
             this.stopSpeedingUp();
-            return;
         }
-
-        (this.isGrowing) ?
-            this.counter += 15:
-            this.counter -= this.decreaseSpeedValue;
 
 
         this.speed += this.speedMultiplier * this.counter;

@@ -8,7 +8,7 @@ export class CanvasLine extends CanvasProperties {
         const material = new THREE.LineBasicMaterial({
             color: 0x616981, transparent: true, opacity: true
         });
-        material.opacity = 0.15;
+        material.opacity = 0.2;
         const geometry = new THREE.Geometry();
         geometry.vertices.push(
             new THREE.Vector3(0, 200, -25),

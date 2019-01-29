@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88315a07-da53-4c24-8306-f7cda4cf2870" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/ThreeDimensionalTriangle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills/SkillsTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/StandardHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/utils/TwoColumnFlex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/canvas/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas/components/Canvas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/canvas/CanvasAnimateSpeedController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas/CanvasAnimateSpeedController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasDot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasDot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/canvas/CanvasLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas/CanvasLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasLine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasLine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GlobalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GlobalStyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/PoppingInText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/PoppingInText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/InsideRouterLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/InsideRouterLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Skills/Skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/Popping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/Popping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,133 +36,53 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50951684">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/canvas/CanvasAnimateSpeedController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#0#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/poppingLetters.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="59" selection-start-column="59" selection-end-column="59" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/canvas/CanvasLogic.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Router.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasDot.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/utils/PoppingInText.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/canvas/CanvasAnimateSpeedController.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="50" selection-start-line="50" selection-end-line="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Skills/Skills.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Skills/SkillsTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/GlobalStyles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -190,11 +105,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Navbar.js" />
-        <option value="$PROJECT_DIR$/src/components/Navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/src/components/Projects/Projects.js" />
-        <option value="$PROJECT_DIR$/src/components/Skills/Skills.js" />
         <option value="$PROJECT_DIR$/src/components/utils/xd.http" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Nav/NavTriggerClass.js" />
@@ -212,7 +123,6 @@
         <option value="$PROJECT_DIR$/tests/enzyme.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tests/poppingLetters.test.js" />
-        <option value="$PROJECT_DIR$/src/components/utils/Popping.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Claim.js" />
         <option value="$PROJECT_DIR$/src/layouts/RouteLayout.js" />
         <option value="$PROJECT_DIR$/src/components/Nav/DesktopNav/DesktopNav.js" />
@@ -221,7 +131,6 @@
         <option value="$PROJECT_DIR$/src/canvas/AnimateSpeedController.js" />
         <option value="$PROJECT_DIR$/tests/canvasAnimateSpeedController.test.js" />
         <option value="$PROJECT_DIR$/src/canvas/Canvas.js" />
-        <option value="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasLine.js" />
         <option value="$PROJECT_DIR$/src/canvas/CanvasAnimate.js" />
         <option value="$PROJECT_DIR$/src/canvas/CanvasResize.js" />
         <option value="$PROJECT_DIR$/src/components/utils/Line.js" />
@@ -233,14 +142,20 @@
         <option value="$PROJECT_DIR$/src/canvas/components/Canvas.js" />
         <option value="$PROJECT_DIR$/src/layouts/MainLayout.js" />
         <option value="$PROJECT_DIR$/src/layouts/InsideRouterLayout.js" />
-        <option value="$PROJECT_DIR$/src/components/About/About.js" />
-        <option value="$PROJECT_DIR$/src/components/utils/PoppingInText.js" />
         <option value="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasDot.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/canvas/CanvasLogic.js" />
-        <option value="$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js" />
         <option value="$PROJECT_DIR$/src/canvas/CanvasAnimateSpeedController.js" />
         <option value="$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js" />
+        <option value="$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasLine.js" />
+        <option value="$PROJECT_DIR$/src/components/utils/TwoColumnFlex.js" />
+        <option value="$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/utils/PoppingInText.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/utils/Popping.js" />
+        <option value="$PROJECT_DIR$/src/components/utils/StandardHeader.js" />
+        <option value="$PROJECT_DIR$/src/components/About/About.js" />
+        <option value="$PROJECT_DIR$/src/components/Skills/SkillsTable.js" />
+        <option value="$PROJECT_DIR$/src/components/Skills/Skills.js" />
       </list>
     </option>
   </component>
@@ -295,20 +210,14 @@
               <item name="piotrzdziarski" type="b2602c69:ProjectViewProjectNode" />
               <item name="piotrzdziarski" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piotrzdziarski" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piotrzdziarski" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piotrzdziarski" type="b2602c69:ProjectViewProjectNode" />
               <item name="piotrzdziarski" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Skills" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piotrzdziarski" type="b2602c69:ProjectViewProjectNode" />
@@ -449,55 +358,55 @@
       <workItem from="1548397672461" duration="22695000" />
       <workItem from="1548487678415" duration="40705000" />
       <workItem from="1548577330597" duration="39766000" />
-      <workItem from="1548695465391" duration="19265000" />
+      <workItem from="1548695465391" duration="19505000" />
+      <workItem from="1548775711781" duration="10521000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.01.29 at 00h 52m 40s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 17h 27m 58s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 52m 46s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 17h 28m 32s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 52m 51s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 17h 28m 42s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 52m 57s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 17h 29m 49s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 54m 16s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 18h 40m 38s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 54m 26s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 18h 41m 26s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 54m 33s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 18h 53m 20s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 54m 43s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 18h 53m 26s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 54m 50s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 18h 53m 32s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.01.29 at 00h 55m 01s.xml">
+    <history-entry file="All_Tests - 2019.01.29 at 20h 19m 16s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255119000" />
+    <option name="totallyTimeSpent" value="265880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="102" width="1366" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17642753" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.41922006" />
-      <window_info anchor="bottom" x="101" y="34" width="1339" height="866" id="Run" order="2" weight="0.4568245" />
+      <window_info anchor="bottom" x="101" y="34" width="1339" height="866" id="Run" order="2" weight="0.4525661" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6518106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,12 +414,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="1587" y="360" width="1172" height="452" id="Terminal" order="10" weight="0.7200557" />
+      <window_info anchor="bottom" x="1587" y="360" width="1172" height="452" id="Terminal" order="10" weight="0.52924794" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32861635" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.3272328" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.17642753" />
     </layout>
     <layout-to-restore>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -538,15 +448,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/GlobalStyle.js" />
-    <entry file="file://$PROJECT_DIR$/src/animations.css" />
-    <entry file="file://$PROJECT_DIR$/src/components/Projects/Projects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/utils/xd.http" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -644,16 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/utils/Popping.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/theme.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -722,16 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasLine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270" />
@@ -754,13 +635,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/programming.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Skills/Skills.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/utils/Line.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -771,32 +645,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/GlobalStyles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/ThreeDimensionalTriangle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Claim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,40 +712,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
+    <entry file="file://$PROJECT_DIR$/src/canvas/CanvasLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="150">
           <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/utils/PoppingInText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -902,30 +739,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/CanvasLogic.js">
+    <entry file="file://$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/poppingLetters.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="59" selection-start-column="59" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -936,12 +756,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/CanvasAnimateSpeedController.test.js">
+    <entry file="file://$PROJECT_DIR$/src/canvas/CanvasLasers/CanvasLine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="225">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/utils/TwoColumnFlex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/canvas/components/CanvasAnimationComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Claim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/utils/PoppingInText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/utils/Popping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/poppingLetters.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/GlobalStyles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/utils/StandardHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Skills/SkillsTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Skills/Skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
