@@ -21,9 +21,7 @@ const PLetter = styled.div`
   height: 36px;
   padding-bottom: 2px;
   font-weight: 700;
-  background: linear-gradient(to bottom left, #1cceff, #caf8ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: ${ ({ theme }) => theme.colors.primary };
 `;
 
 const LogoName = styled.h2`

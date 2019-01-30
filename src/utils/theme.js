@@ -10,7 +10,8 @@ export const theme = {
         background: "#1d2029",
     },
     colors: {
-        primary: "#2ce8cd"
+        primary: "#2ce8cd",
+        dark: "#252934",
     },
     media: {
         mobile: "@media (min-width: 476px)",
@@ -22,5 +23,11 @@ export const theme = {
         display: flex;
         justify-content: center;
         align-items: center;
+    `,
+    positionAbsoluteCentered: `
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     `,
 };

@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   body,html {
     padding: 0;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", "Raleway", sans-serif;
      ${ ({theme}) => theme.media.tablet} {
       overflow: hidden;
      }

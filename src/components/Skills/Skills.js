@@ -44,6 +44,15 @@ const SecondSection = styled(Section)`
     align-items: center;
     height: auto;
   }
+  
+  ${ ({ theme }) => theme.media.smallDesktop } {
+    padding: 25px 10px 25px 40px;  
+  }
+  
+  
+  ${ ({ theme }) => theme.media.bigDesktop } {
+    padding: 25px 0 25px 80px;
+  }
 `;
 
 
