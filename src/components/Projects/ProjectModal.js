@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Line from "../utils/Line";
 
 
@@ -14,6 +14,16 @@ const BodyOverlay = styled.div`
   max-width: 1400px;
 `;
 
+const modalIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+`;
+
 
 const ModalWrapper = styled.section`
   margin-top: calc(${ ({ theme }) => theme.nav.mobileHeight } + 20px);
@@ -25,7 +35,8 @@ const ModalWrapper = styled.section`
   padding: 20px;
   position: relative;
   background: ${ ({ theme }) => theme.colors.dark };
-  
+  opacity: 0;
+  animation: ${ modalIn } .4s forwards;
  
   ${ ({ theme }) => theme.media.mobile } {
     padding: 25px;
@@ -66,8 +77,10 @@ const ModalDescription = styled.article`
 `;
 
 const WebsiteLink = styled.a`
+  display: block;
   color: ${ ({ theme }) => theme.colors.primary };
   text-decoration: none;
+  word-wrap: break-word;
 `;
 
 
@@ -108,22 +121,32 @@ const CloseButton = styled.button`
 `;
 
 class ProjectModal extends Component {
+
+    constructor(props) {
+        super(props);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    closeModal() {
+        this.props.closeModal();
+    }
+
     render() {
         return (
-            <BodyOverlay>
-                <ModalWrapper>
-                    <CloseButton/>
-                    <ModalTitle>{ this.props.title }</ModalTitle>
+            <BodyOverlay isModalOpen={ this.props.isModalOpen }>
+                <ModalWrapper isModalOpen={ this.props.isModalOpen }>
+                    <CloseButton onClick={ this.closeModal }/>
+                    <ModalTitle>{ this.props.modalTitle }</ModalTitle>
                     <Line width="100%"/>
-                    <ModalImg src={ this.props.img }></ModalImg>
+                    <ModalImg src={ this.props.modalImage }></ModalImg>
                     <ModalDescription>
                         <div>
-                            { this.props.description }
+                            { this.props.modalDescription }
                         </div>
                         <p>
                             Link to website:
-                            <WebsiteLink rel="noopener noreferrer" target="_blank" href={ this.props.link }>
-                                { this.props.link }
+                            <WebsiteLink rel="noopener noreferrer" target="_blank" href={ this.props.modalLink }>
+                                { this.props.modalLink }
                             </WebsiteLink>
                         </p>
                     </ModalDescription>
