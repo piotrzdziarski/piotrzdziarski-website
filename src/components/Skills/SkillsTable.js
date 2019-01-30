@@ -22,7 +22,7 @@ const PopIn = keyframes`
 
 const SkillsWrapper = styled.ul`
   list-style: none;
-  padding: 20px;
+  padding: 30px;
   margin: 0;
   height: 100%;
   ${ ({ theme }) => theme.displayFlexCentered };
@@ -98,6 +98,7 @@ class SkillsTable extends Component {
         arrayWithSkills.forEach((skill, i) => {
             skillsJSXTable.push(<Skill animationDelay={i * 60} key={ i }>{ skill }</Skill>);
         });
+
 
         return skillsJSXTable;
     }

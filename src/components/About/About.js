@@ -42,7 +42,7 @@ class About extends Component {
                                 HTML and CSS.
                             </p>
                             <p>
-                                Then I took programming not too seriously, but when I started wading in
+                                Then I took programming not too seriously, but when I started wading into
                                 PHP, SQL and JS I understood that this is what I want to do in my life.
                             </p>
                         </Article>
