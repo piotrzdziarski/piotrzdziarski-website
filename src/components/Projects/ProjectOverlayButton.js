@@ -58,4 +58,9 @@ class ProjectOverlayButton extends Component {
     }
 }
 
+ProjectOverlayButton.propTypes = {
+    projectID: propTypes.number,
+    openModal: propTypes.func
+};
+
 export default ProjectOverlayButton;

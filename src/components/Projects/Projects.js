@@ -74,6 +74,21 @@ class Projects extends Component {
         super(props);
         this.projectImagesRefs = React.createRef();
         this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    componentDidMount() {
+        this.createInitialStateModalValues();
+    }
+
+    createInitialStateModalValues() {
+        this.setState({
+            isModalOpen: false,
+            modalTitle: '',
+            modalImage: {},
+            modalDescription: ``,
+            modalLink: ''
+        });
     }
 
 
@@ -94,7 +109,36 @@ class Projects extends Component {
 
 
     openModal(projectID) {
-        console.log(projectID);
+        this.setState({
+            isModalOpen: true,
+            modalTitle: ProjectsJSON[projectID].title,
+            modalImage: ProjectsJSON[projectID].image,
+            modalDescription: ProjectsJSON[projectID].description,
+            modalLink: ProjectsJSON[projectID].link
+        });
+    }
+
+    renderModal() {
+        if (!this.state || !this.state.isModalOpen)
+            return;
+
+        return (
+            <ProjectModal
+                closeModal={ this.closeModal }
+                isModalOpen={ this.state.isModalOpen }
+                modalTitle={ this.state.modalTitle }
+                modalImage={ this.state.modalImage }
+                modalDescription={ this.state.modalDescription }
+                modalLink={ this.state.modalLink }
+            />
+        );
+    }
+
+
+    closeModal() {
+        this.setState({
+            isModalOpen: false
+        });
     }
 
 
@@ -103,8 +147,8 @@ class Projects extends Component {
             <>
                 <GridWrapper>
                     { this.renderProjects() }
+                    { this.renderModal() }
                 </GridWrapper>
-                {/*<ProjectModal img={ ProjectsJSON[0].image }/>*/ }
             </>
         );
     }
