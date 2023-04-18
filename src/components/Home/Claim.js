@@ -60,7 +60,7 @@ class Claim extends Component {
         return (
             <ClaimWrapper>
                 <Header>
-                    <PoppingInText>Hello, I'm a</PoppingInText>
+                    <PoppingInText>Hello, I'm</PoppingInText>
                     <BlockWrapper>
                         <Primary>
                             <PoppingInText delay={ 9 }> Peter Zdziarski</PoppingInText>

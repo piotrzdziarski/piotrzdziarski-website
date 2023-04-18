@@ -1,11 +1,12 @@
 {
-  "main.js": "/static/js/main.ad45aa49.chunk.js",
-  "main.js.map": "/static/js/main.ad45aa49.chunk.js.map",
-  "static/js/1.089ac93b.chunk.js": "/static/js/1.089ac93b.chunk.js",
-  "static/js/1.089ac93b.chunk.js.map": "/static/js/1.089ac93b.chunk.js.map",
+  "main.js": "/static/js/main.bd856c48.chunk.js",
+  "main.js.map": "/static/js/main.bd856c48.chunk.js.map",
+  "static/js/1.9b318171.chunk.js": "/static/js/1.9b318171.chunk.js",
+  "static/js/1.9b318171.chunk.js.map": "/static/js/1.9b318171.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/fslightbox.jpg": "/static/media/fslightbox.9320446b.jpg",
+  "static/media/cossack.jpg": "/static/media/cossack.a24be2c0.jpg",
   "static/media/mdb.jpg": "/static/media/mdb.27c2e753.jpg",
   "static/media/quizert.jpg": "/static/media/quizert.8e8013e7.jpg",
   "static/media/skijumping.jpg": "/static/media/skijumping.e1752c72.jpg",
@@ -13,8 +14,7 @@
   "static/media/smokes.jpg": "/static/media/smokes.f9f0a32f.jpg",
   "static/media/spacer.jpg": "/static/media/spacer.5d95c327.jpg",
   "static/media/bendophoto.jpg": "/static/media/bendophoto.4061dc4a.jpg",
-  "static/media/cossack.jpg": "/static/media/cossack.a24be2c0.jpg",
   "index.html": "/index.html",
-  "precache-manifest.fb87783fa453a615671e84ec45b60006.js": "/precache-manifest.fb87783fa453a615671e84ec45b60006.js",
+  "precache-manifest.fd45a15e822a224980c0a2a243da7e9c.js": "/precache-manifest.fd45a15e822a224980c0a2a243da7e9c.js",
   "service-worker.js": "/service-worker.js"
 }
