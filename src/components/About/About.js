@@ -30,21 +30,12 @@ class About extends Component {
                         </StandardHeader>
                         <Line width="100%"/>
                         <Article>
-                            <p>My programming journey started about 2 years ago after I watched my first C++
-                                tutorial.</p>
-                            <p>I didn't know yet which coding path should I choose. I've tried writing desktop apps
-                                in C++,
-                                mobile apps in Xamarin or even games in Unity.
-                            </p>
+                            <p>My programming journey started about 2017 after I've watched my first C++ tutorial.</p>
+                            <p>I didn't know yet which coding path I should choose. I've tried writing desktop apps in C++, mobile apps in Xamarin or even games in Unity.</p>
                             <p>
-                                In the end I've chosen web dev. I've had a lot of fun with writing simple websites
-                                in
-                                HTML and CSS.
+                                Finally I chose web devolpment. I'd had a lot of fun with writing simple websites in HTML and CSS.
                             </p>
-                            <p>
-                                Then I took programming not too seriously, but when I started wading into
-                                PHP, SQL and JS I understood that this is what I want to do in my life.
-                            </p>
+                            <p>I took programming back then not too seriously, but when I started wading into PHP, SQL, and JavaScript, I understood that this is what I want to do in my life.</p>
                         </Article>
                     </div>
                 </SectionFirst>
